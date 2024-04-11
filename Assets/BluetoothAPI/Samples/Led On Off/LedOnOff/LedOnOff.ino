@@ -5,7 +5,6 @@
 #define LED 5
 
 
-SoftwareSerial mySerial(RX, TX);
 
 
 char data;
@@ -13,7 +12,7 @@ char data;
 void setup() {
   pinMode(LED, OUTPUT);
   Serial.begin(9600);
-  mySerial.begin(9600);
+  Serial1.begin(9600);
   data = 0;
 }
 
